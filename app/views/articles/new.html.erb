@@ -1,0 +1,17 @@
+<div class="container">
+
+  <%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+
+    <div class="submit"><%= f.submit %></div>
+  <% end %>
+
+</div>
+
+
+<div class="back-to-list">
+  <%= link_to "Back to list", articles_path %>
+</div>
